@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,18 +11,32 @@ body {
 .timer-container {
     text-align: center;
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 #timer {
-    font-size: 2.5em;
-    color: #333;
+    font-size: 3em;
+    color: #343a40;
+    margin-bottom: 20px;
 }
 
 #cost {
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #555;
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+/* Pievieno efektu tikai, kad taimers darbojas */
+.timer-active #timer {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
 }
