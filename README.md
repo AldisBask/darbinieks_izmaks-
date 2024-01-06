@@ -1,0 +1,1 @@
+# darbinieks_izmaks-
